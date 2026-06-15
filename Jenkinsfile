@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout'){
-            steps {
-              git url: 'https://github.com/Junkatron/vat-calculator.git',
-                  branch: 'main'
-            }
-        }
+        //stage('Checkout'){
+        //    steps {
+        //      git url: 'https://github.com/Junkatron/vat-calculator.git',
+        //          branch: 'main'
+        //    }
+        //}
         stage('Run Tests') {
             steps {
               sh 'npm install'
